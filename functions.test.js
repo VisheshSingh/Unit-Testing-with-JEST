@@ -42,3 +42,9 @@ test("Should be less than 1660", () => {
 test("There is no I in team", () => {
   expect("team").not.toMatch(/I/);
 });
+
+// Arrays
+test("Should contain admin in usernames", () => {
+  const usernames = ["Mary", "Parker", "admin"];
+  expect(usernames).toContain("admin");
+});
